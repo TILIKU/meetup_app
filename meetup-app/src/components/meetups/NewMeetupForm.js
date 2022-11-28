@@ -2,7 +2,9 @@ import Card from "../UI/Card"
 import classes from "./NewMeetupForm.module.css"
 
 function NewMeetupForm(){
-    function submitHandler(){
+    function submitHandler(event){
+        event.preventDefault();
+
         
     }
 
