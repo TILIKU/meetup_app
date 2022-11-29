@@ -7,6 +7,7 @@ function NewMeetupForm(props){
     const imageInputRef = useRef()
     const addressInputRef = useRef()
     const descriptionInputRef = useRef()
+    
 
     function submitHandler(event){
         event.preventDefault();
@@ -19,15 +20,17 @@ function NewMeetupForm(props){
         const meetupData = {
             title:enteredTitle,
             image:enteredImage,
-            adress:enteredAddress,
-            description:enteredDescription
+            address:enteredAddress,
+            description:enteredDescription,
         };
-
+        
         props.onAddMeetup(meetupData);
+        
     }
 
     return (
         <Card>
+            
             <form className={classes.form} onSubmit={submitHandler}>
                 <div className={classes.control}>
                     <label htmlFor="title">meetup title</label>
@@ -50,6 +53,9 @@ function NewMeetupForm(props){
                 </div>
             </form>
         </Card>
+        
     )
+    
 }
+
 export default NewMeetupForm
