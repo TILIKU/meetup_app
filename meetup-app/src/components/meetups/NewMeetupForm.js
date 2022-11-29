@@ -2,6 +2,7 @@ import Card from "../UI/Card"
 import classes from "./NewMeetupForm.module.css"
 import { useRef } from "react"
 
+
 function NewMeetupForm(props){
     const titleInputRef = useRef()
     const imageInputRef = useRef()
@@ -25,10 +26,10 @@ function NewMeetupForm(props){
         };
         
         props.onAddMeetup(meetupData);
-        
     }
-
+    
     return (
+        
         <Card>
             
             <form className={classes.form} onSubmit={submitHandler}>
