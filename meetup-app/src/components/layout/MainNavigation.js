@@ -9,7 +9,7 @@ function MainNavigation() {
 
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>cock place</div>
+      <div className={classes.logo}>meetup place</div>
       <nav>
         <ul>
           <li>
